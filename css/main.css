@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -12,21 +12,34 @@ html {
   width: 100%;
 }
 
-.banner-title {
-background-color: rgba(0, 0, 0, .5);
-position: absolute;
-font-size: 4rem;
-color: #fff;
+h2 {
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 4rem;
+  color: #fff;
+  display: inline;
+  line-height: 1.4;
 }
 
-.banner-body {
+p {
   font-size: 2rem;
   font-style: italic;
   max-width: 50em;
+}
+
+.banner-content {
+  max-height: 500px;
   position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  padding: 1em 0 3em;
 }
 
 .banner {
-  max-height: 500px;
   position: relative;
+}
+
+body {
+  max-height: 500px;
+  margin: 0;
 }
