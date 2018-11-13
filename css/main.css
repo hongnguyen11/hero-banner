@@ -1,10 +1,15 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+body {
+  max-height: 500px;
+  margin: 0;
 }
 
 .img-flex {
@@ -26,20 +31,20 @@ p {
   max-width: 50em;
 }
 
-.banner-content {
-  max-height: 500px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  padding: 1em 0 3em;
-}
-
 .banner {
   position: relative;
+  bottom: 0;
+  max-height: 700px;
 }
 
-body {
-  max-height: 500px;
-  margin: 0;
+.banner-content {
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  padding-top: .5rem;
+  padding-left: 1.25rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 50em;
 }
